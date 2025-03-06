@@ -11,5 +11,12 @@
 
 const products = ["milk", "bread", "eggs", "butter", "cheese", "orange juice"];
 
+const findIfItemExist = (products, productName) => {
+  let isProduct = products.includes(productName);
+  return isProduct
+    ? `พบ ${productName} ในรายการสินค้า`
+    : `ไม่พบ ${productName} ในรายการสินค้า`;
+};
+
 console.log(findIfItemExist(products, "cereal box")); // ไม่พบ cereal box ในรายการสินค้า
 console.log(findIfItemExist(products, "cheese")); // พบ cheese ในรายการสินค้า
